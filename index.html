@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./pages/index.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Cafetería Juan - Tu rincón de café y sensación</title>
 </head>
 <body>
@@ -84,9 +84,74 @@
             </div>
           </div>
         </section>
-            <section class="content__reservation" id="reservation"> >
 
-            </section>
+        <!-- FORM -->
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name"
+                >Nombre *
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+              /></label>
+              <label class="form__label" for="guests"
+                >Número de comensales *
+
+                <input
+                  class="form__input"
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+              /></label>
+
+              <label class="form__label" for="date"
+                >Fecha y hora *
+                <input
+                  class="form__input"
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+              /></label>
+
+              <label class="form__label" for="email"
+                >Tu correo electrónico *
+
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+              /></label>
+            </fieldset>
+            <button class="form__button" type="submit">
+              Reservar una mesa
+            </button>
+
+            <label class="form__checkbox-label">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="terms"
+                required
+              />
+              Acepto los términos de uso
+            </label>
+          </form>
+        </section>
         </main>
 
         <!-- FOOTER  -->
